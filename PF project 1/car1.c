@@ -18,6 +18,8 @@ struct LeaderboardEntry
     char nickname[50];
 };
 
+
+
 // Functions
 void showMenu();
 void playGame();
@@ -80,71 +82,67 @@ int main()
 }
 void backStory()
 {
- setTextColor(5);    
- printf("=== BACKSTORY===\n\n");
+    setTextColor(5);    
+    printf("=== BACKSTORY ===\n\n");
 
-    printf("In the year 2154, Earth has made significant advancements in space travel and colonization.\n");
-    printf("Humankind has established thriving colonies on Mars, the Moon, and beyond. However, these advancements\n");
-    printf("have attracted the attention of a malevolent alien race known as the *Zylox*, a technologically advanced\n");
-    printf("species that has set its sights on Earth for conquest.\n\n");
-    printf("\n<CONTINUE>");
+    printf("In the year 2154, Earth faced an unimaginable catastrophe. A deadly virus, \"Necrostrain Z\",\n");
+    printf("was unleashed from a secret laboratory, spreading like wildfire across the globe. The virus\n");
+    printf("transformed the infected into flesh-eating zombies, driven by an insatiable hunger for human flesh.\n\n");
+    printf("<CONTINUE>");
     _getch();
     system("cls");
- printf("=== BACKSTORY===\n\n");   
-    printf("Unbeknownst to humanity, the Zylox have secretly infiltrated Earth, preparing for their invasion.\n");
-    printf("Their first wave of attack comes unexpectedly in the form of mysterious, high-tech ships that begin appearing\n");
-    printf("across the globe. The Zylox want to destabilize Earth, subdue its population, and harvest its resources.\n");
-    printf("Their ships are equipped with sophisticated weaponry and cloaking devices, making them nearly impossible to detect.\n\n");
-    printf("\n<CONTINUE>");
+
+    printf("=== BACKSTORY ===\n\n");
+    printf("Society crumbled in mere weeks. Governments fell, cities were overrun, and humanity was pushed to the brink of extinction.\n");
+    printf("Survivors are forced to band together in small groups, scavenging for resources and fighting to stay alive.\n\n");
+    printf("<CONTINUE>");
     _getch();
     system("cls");
- printf("=== BACKSTORY===\n\n");   
-    printf("The world is in chaos. Cities are evacuated, governments scramble to mount a defense, and panic spreads.\n");
-    printf("Amidst the chaos, a lone survivor, *Alex Cruz*, finds himself behind the wheel of an experimental car—an\n");
-    printf("advanced, AI-powered vehicle designed for high-speed travel and exploration.\n\n");
-    printf("\n<CONTINUE>");
+
+    printf("=== BACKSTORY ===\n\n");
+    printf("Amidst the chaos, you, a former race car driver, find yourself behind the wheel of the Vanguard\n");
+    printf("an experimental, AI-powered car designed to withstand extreme conditions. The car was initially developed\n");
+    printf("for disaster relief, but now it has become humanity's last hope.\n\n");
+    printf("<CONTINUE>");
     _getch();
     system("cls");
- printf("=== BACKSTORY===\n\n");   
-    printf("The car, code-named *\"Vanguard\"*, was initially developed for exploration on hostile planetary surfaces,\n");
-    printf("but now it becomes humanity's best hope. With no time to waste and no way to stop the alien invasion,\n");
-    printf("Alex has to race through dangerous, alien-infested roads, dodging obstacles, and evading attacks from Zylox\n");
-    printf("drones and spacecraft.\n\n");
-    printf("\n<CONTINUE>");
+
+    printf("=== BACKSTORY ===\n\n");
+    printf("With hordes of zombies infesting the roads and cities, your mission is to deliver vital supplies to a safe zone\n");
+    printf("where humanity's last survivors are gathering. You must dodge obstacles, outrun the undead, and fight for survival\n");
+    printf("in a race against time.\n\n");
+    printf("<CONTINUE>");
     _getch();
     system("cls");  
     setTextColor(7);  
 }
+
 void titleScreen()
 {
- setTextColor(1);
-    printf("  __ __ __  __ __  __ ___    __ _    _ \n");
-    printf(" |  _|   / _ \\|  _ \\|  __|/ __|  _ \\  / __| |  | |\n");
-    printf(" | |_    | || |  | | |) | |_  | (_ | |_) | | (_ | |_| |\n");
-    printf(" |  _|   | || |  | |  _  /|  _|  \\_ \\|  _  /   \\_ \\|  __  |\n");
-    printf(" | |__ | || || | | \\ \\| |_ _) | | \\ \\   ___) | |  | |\n");
-    printf(" |__|__|\\_/||  \\\\__|__/||  \\\\ |_/||  |_|\n");
-    printf("                                                                  \n");
-    printf("                                                                  \n");
-    setTextColor(3);
-    printf("       .-\"\"\"\"\"\"-.\n");
-    printf("      /          \\\n");
-    printf("     /            \\\n");
-    printf("    |              |\n");
-    printf("    |,  .-.  .-.  ,|\n");
-    printf("    | )(o/  \\o)( |\n");
-    printf("    |/     /\\     \\|\n");
-    printf("    (_     ^^     _)\n");
-    printf("     \\_|IIIIII|_/\n");
-    printf("      | \\IIIIII/ |\n");
-    printf("      \\          /\n");
-    printf("       --------\n");
-printf("ESCAPE THE ALIENS\n\n");   
-setTextColor(7); 
-printf("<<<PRESS ANY KEY TO CONTINUE>>>"); 
-_getch();
-system("cls");   
+    setTextColor(1);
+    printf("====================================================\n");
+    printf("              WELCOME TO ZOMBIE WORLD\n");
+    printf("====================================================\n\n");
+    
+    printf("                     .-'      '-.        \n");
+    printf("                    /            \\       \n");
+    printf("                   |,  .-.  .-.  ,|      \n");
+    printf("                   | )(_o/  \\o_)( |      \n");
+    printf("                   |/     /\\     \\|      \n");
+    printf("                   (_     ^^     _)      \n");
+    printf("                    \\__|IIIIII|__/       \n");
+    printf("                     | \\IIIIII/ |        \n");
+    printf("                     \\          /        \n");
+    printf("                      `--------`         \n");
+    printf("====================================================\n");
+    printf("                 ESCAPE THE UNDEAD\n");
+    printf("====================================================\n\n");  
+    setTextColor(7); 
+    printf("<<<PRESS ANY KEY TO CONTINUE>>>"); 
+    _getch();
+    system("cls");   
 }
+
 void showMenu()
 {
     printf("\nMenu:\n");
@@ -159,9 +157,9 @@ void showRules()
     printf("\nGame Rules:\n");
     printf("1. Use 'a' or 'A' to swerve the car left.\n");
     printf("2. Use 'd' or 'D' to swerve the car right.\n");
-    printf("4. Avoid Aliens (X). If the car crashes into an Alien, the game is over.\n");
+    printf("4. Avoid Zombies (X). If the car crashes into a zombie, the game is over.\n");
     printf("5. Survive for as long as possible!\n\n");
-    printf("6. Beware! The Aliens are unpredictable...they can move(horizontally) towards you\n\n");
+    printf("6. Beware! The Zombies are unpredictable...they can move(horizontally) towards you\n\n");
 }
 
 void showLeaderboard()
@@ -199,7 +197,7 @@ void playGame() // Core gameplay function that runs the main loop.
     initializeTrack(track); // Initializes the track with empty spaces.
 
     int delayed_time = DELAY; // Sets the initial delay between updates.
-    printf("\033[%dm", 47); // Sets a white background color for the game display.
+    system("color F0");  // Sets a light blue background color for the game display.
 
     while (!gameOver) // Main gameplay loop.
     {
@@ -208,7 +206,7 @@ void playGame() // Core gameplay function that runs the main loop.
         {
             system("cls"); // Clears the screen.
             system("color 07"); // Resets the console color.
-            printf("Game Over! You collided with an ALIEN.\n"); // Displays a game-over message.
+            printf("Game Over! You collided with a Zombie.\n"); // Displays a game-over message.
             saveScore(score); // Saves the player's score.
             break; // Exits the loop.
         }
@@ -218,7 +216,7 @@ void playGame() // Core gameplay function that runs the main loop.
         if (_kbhit()) // Checks if a key is pressed.
         {
             input = _getch(); // Captures the pressed key.
-            if ((input == 'a' || input == 'A') && carPosX > 0 && track[carPosY][carPosX - 1] != 'X')
+            if ((input == 'a' || input == 'A') && carPosX > 0 && carPosX < TrackWidth && track[carPosY][carPosX - 1] != 'X')
             { 
                 carPosX -= 4; // Moves the car left if possible.
                 Beep(750, 10); // Plays a beep sound.
@@ -277,12 +275,12 @@ void printTrack(char track[TrackHeight][TrackWidth], int carPosX, int carPosY)
         {
             if (i == carPosY && j == carPosX) 
             {
-                setTextColor(1); // Blue for car
-                printf("#!*!#");
+                setTextColor(5); // red for car
+                printf("[O]_[O]");
             }
             else if (track[i][j] == 'X') 
             {
-                setTextColor(4); // Red for obstacles
+                setTextColor(3); // purple for zombies
                 printf("X");
             }
             else
@@ -304,7 +302,9 @@ int checkCollision(char track[TrackHeight][TrackWidth], int carPosX, int carPosY
         track[carPosY][carPosX+1] == 'X'||
         track[carPosY][carPosX+2] == 'X'||
         track[carPosY][carPosX+3] == 'X'||
-        track[carPosY][carPosX+4] == 'X'; // Check for obstacle collision
+        track[carPosY][carPosX+4] == 'X'||
+        track[carPosY][carPosX+5] == 'X'|| 
+        track[carPosY][carPosX+6] == 'X'; // Check for obstacle collision
     }
     return 0;
 }
